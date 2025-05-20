@@ -14,6 +14,8 @@ final readonly class ForkRuntime implements Runtime
 {
     /**
      * Defers the given callback to be executed asynchronously.
+     * @param  Closure  $callback  The callback that will be executed.
+     * @return  ForkResult  The result object that processes the return of the callback.
      */
     public function defer(Closure $callback): Result
     {

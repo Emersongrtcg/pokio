@@ -5,7 +5,7 @@ namespace Pokio\Contracts;
 interface Result
 {
     /**
-     * The result of the asynchronous operation.
+     * Gets the return of the operation.
      */
     public function get(): mixed;
 }

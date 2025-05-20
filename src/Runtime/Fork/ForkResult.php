@@ -21,6 +21,7 @@ final class ForkResult implements Result
 
     /**
      * Creates a new fork result instance.
+     * @param  string  $pipePath  The path to the pipe were the result was stored.
      */
     public function __construct(
         private readonly string $pipePath,
@@ -29,7 +30,8 @@ final class ForkResult implements Result
     }
 
     /**
-     * The result of the asynchronous operation.
+     * Gets the result of the asynchronous operation.
+     * @return  mixed  The return stored in the pipe path passed in the constructor.
      */
     public function get(): mixed
     {

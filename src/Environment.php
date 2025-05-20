@@ -16,7 +16,7 @@ final class Environment
     public static ?Runtime $runtime = null;
 
     /**
-     * The environment's runtime.
+     * Makes the environment to use the asynchronous runtime.
      */
     public static function useFork(): void
     {
@@ -28,7 +28,7 @@ final class Environment
     }
 
     /**
-     * The environment's runtime.
+     * Makes the environment to use the synchronous runtime.
      */
     public static function useSync(): void
     {
